@@ -1,0 +1,15 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to the accounts API"
+  contactDetails:
+    name: "Liliherax - Product Owner"
+    email: "__"
+  onCallSupport:
+    - (011)-GOOD-PLEASE-HELP-RUNNING-THIS

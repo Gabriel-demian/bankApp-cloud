@@ -1,0 +1,33 @@
+server:
+    port: 8080
+spring:
+    datasource:
+        url: jdbc:h2:mem:testdb
+        driverClassName: org.h2.Driver
+        username: sa
+        password:
+    h2:
+        console:
+            enabled: true
+    sql:
+        init:
+            platform: h2
+            schema-locations: classpath:script.sql
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+    config:
+        import:
+            - "application_qa.yml"
+            - "application_prod.yml"
+build:
+    version: "3.0"
+
+accounts:
+    message: "Welcome to the accounts API"
+    contactDetails:
+        name: "Liliherax"
+        email: "__"
+    onCallSupport:
+        - (011)-GOOD-PLEASE-HELP

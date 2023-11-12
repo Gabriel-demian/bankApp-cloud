@@ -1,0 +1,15 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+cards:
+  message: "Welcome to the cards API"
+  contactDetails:
+    name: "Liliherax - Product Owner"
+    email: "__"
+  onCallSupport:
+    - (011)-GOOD-PLEASE-HELP-RUNNING-THIS
