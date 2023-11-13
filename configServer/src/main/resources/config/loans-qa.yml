@@ -1,13 +1,8 @@
-spring:
-  config:
-    activate:
-      on-profile: "qa"
-
 build:
   version: "2.0"
 
-cards:
-  message: "Welcome to the cards API"
+loans:
+  message: "Welcome to the loans API"
   contactDetails:
     name: "Liliherax - QA Lead"
     email: "__"

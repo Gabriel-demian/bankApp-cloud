@@ -1,0 +1,10 @@
+build:
+    version: "3.0"
+
+accounts:
+    message: "Welcome to the accounts API"
+    contactDetails:
+        name: "Liliherax"
+        email: "__"
+    onCallSupport:
+        - (011)-GOOD-PLEASE-HELP

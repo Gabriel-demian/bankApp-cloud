@@ -1,13 +1,8 @@
-spring:
-  config:
-    activate:
-      on-profile: "prod"
-
 build:
-  version: "1.0"
+  version: "3.0"
 
-loans:
-  message: "Welcome to the loans API"
+cards:
+  message: "Welcome to the cards API"
   contactDetails:
     name: "Liliherax - Product Owner"
     email: "__"
