@@ -3,18 +3,30 @@ spring:
     name: "configserver"
   profiles:
     active: git
-  #active: native
   cloud:
     config:
       server:
-        #native:
-        #search-locations: "classpath:/config"
         git:
-          uri: ""
+          uri: "https://github.com/Gabriel-demian/bankApp-config.git"
           default-label: main
           timeout: 5
           clone-on-start: true
           force-pull: true
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
+
+#refresh properties at runtime
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+encrypt:
+  key: "KJ345qB63g4F8394TBdN34TUIw3486"
 
 server:
   port: 8071

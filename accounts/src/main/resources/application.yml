@@ -23,3 +23,15 @@ spring:
             ddl-auto: update
     config:
         import: "optional:configserver:http://localhost:8071"
+    rabbitmq:
+        host: "localhost"
+        port: 5672
+        username: "guest"
+        password: "guest"
+
+#refresh properties at runtime
+management:
+  endpoints:
+    web:
+      exposure:
+          include: "*"
